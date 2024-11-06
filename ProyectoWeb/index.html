@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién quiere ser millonario?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="light-effect"></div>
+        <div class="question-container">
+            <div class="question" id="question"></div>
+            <div class="options-grid" id="options"></div>
+        </div>
+        <div class="help-buttons">
+            <button class="help-button" id="fifty-fifty">50:50</button>
+            <button class="help-button" id="phone-friend">Llamada a un amigo</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button class="help-button" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="player-name-modal">
+        <div class="player-name-modal">
+            <input type="text" class="player-name-input" id="player-name-input" placeholder="Ingresa tu nombre">
+            <button class="help-button" onclick="startGame()">Comenzar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
